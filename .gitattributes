@@ -1,0 +1,9 @@
+# Normalize line endings
+* text=auto
+
+# Explicitly mark text files
+*.md   text
+*.py   text
+*.txt  text
+*.yml  text
+*.yaml text
