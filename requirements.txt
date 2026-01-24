@@ -3,4 +3,5 @@ pandas
 numpy
 seaborn
 scikit-learn
--e .
+dill
+#-e .
