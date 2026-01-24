@@ -2,8 +2,8 @@ setuptools
 pandas
 numpy
 seaborn
-scikit-learn
+scikit-learn==1.3.2
 dill
-catboost
+catboost==1.2.8
 xgboost
 #-e .
