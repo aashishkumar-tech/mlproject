@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="bg-grid">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/" class="nav-brand">
+            <div class="brand-icon">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    style="width: 20px; height: 20px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+            </div>
+            PredictionAI
+        </a>
+        <div class="nav-links">
+            <a href="/" class="active">Home</a>
+            <a href="/predictdata">Predict</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <main class="hero-section">
+        <div class="hero-glow"></div>
+
+        <div class="badge">
+            <span class="badge-dot"></span>
+            Powered by Advanced Machine Learning
+        </div>
+
+        <h1 class="hero-title">
+            Predict Student Performance <br>
+            <span class="gradient-text text-glow">with Precision</span>
+        </h1>
+
+        <p class="hero-sub">
+            Our AI-driven pipeline analyzes demographic factors, parental education, and test scores to forecast
+            academic outcomes with high accuracy.
+        </p>
+
+        <div class="hero-actions">
+            <a href="/predictdata" class="btn btn-primary">Get Started Now</a>
+            <a href="#" class="btn btn-secondary">Learn How It Works</a>
+        </div>
+    </main>
+</body>
+
+</html>
