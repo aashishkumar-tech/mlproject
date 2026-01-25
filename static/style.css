@@ -286,6 +286,32 @@ input {
     transition: all 0.2s ease;
 }
 
+.brand-logo {
+    height: 44px;
+    /* Navbar size */
+    width: auto;
+    max-width: 44px;
+
+    image-rendering: auto;
+    /* Prevent pixelation */
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+
+    filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.4));
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-main);
+}
 select:focus,
 input:focus {
     border-color: var(--accent);

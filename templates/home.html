@@ -16,15 +16,10 @@
     <!-- Navbar -->
     <nav class="navbar">
         <a href="/" class="nav-brand">
-            <div class="brand-icon">
-                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    style="width: 20px; height: 20px;">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-            </div>
-            PredictionAI
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="PredictionAI Logo" class="brand-logo" />
+            <span>PredictionAI</span>
         </a>
+
         <div class="nav-links">
             <a href="/">Home</a>
             <a href="/predictdata" class="active">Predict</a>
