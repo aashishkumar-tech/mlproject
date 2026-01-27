@@ -1,10 +1,22 @@
-setuptools
-pandas
-numpy
-seaborn
+# Core build tools
+setuptools>=65.0.0
+wheel
+
+# Web server (REQUIRED for Elastic Beanstalk)
+gunicorn==21.2.0
+
+# Web framework
+Flask==2.3.3
+
+# Data & ML
+numpy==1.24.4
+pandas==1.5.3
 scikit-learn==1.3.2
-dill
+dill==0.3.8
+
+# ML models (precompiled wheels available for Python 3.9)
 catboost==1.2.8
-xgboost
-Flask
-#-e .
+xgboost==1.7.6
+
+# Optional (safe)
+seaborn==0.12.2
