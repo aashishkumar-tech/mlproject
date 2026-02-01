@@ -18,7 +18,7 @@ env/
 
 ## Data and artifacts
 
-artifacts/
+# artifacts/  # COMMENTED OUT - need model.pkl and preprocessor.pkl for predictions
 notebook/
 logs/
 catboost_info/
