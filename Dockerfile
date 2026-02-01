@@ -19,4 +19,4 @@ COPY . /app
 EXPOSE 8080
 
 # Use gunicorn to serve the Flask app defined in app.py as `app`
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8080", "app:app"]
+CMD ["gunicorn", "-w", "2", "--timeout", "120", "-b", "0.0.0.0:8080", "app:app"]
