@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./:/app
+    restart: unless-stopped
+    command: gunicorn -w 2 -b 0.0.0.0:8080 app:app
