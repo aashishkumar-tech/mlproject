@@ -4,13 +4,13 @@
 
 This project demonstrates **production-grade ML deployment** with continuous integration and delivery. It features a student performance prediction model deployed as a Flask web application with fully automated CI/CD pipeline.
 
-[![Deploy to EC2](https://github.com/YOUR_USERNAME/mlproject/actions/workflows/ec2-deploy.yml/badge.svg)](https://github.com/YOUR_USERNAME/mlproject/actions/workflows/ec2-deploy.yml)
+[![Deploy to EC2](https://github.com/aashishkumar-tech/mlproject/actions/workflows/ec2-deploy.yml/badge.svg)](https://github.com/aashishkumar-tech/mlproject/actions/workflows/ec2-deploy.yml)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
 ![AWS](https://img.shields.io/badge/AWS-EC2%20%7C%20ECR-orange)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-green)
 
-🔗 **Live Production Deployment**: http://34.228.159.84/
+🔗 **Live Production Deployment**: <http://34.228.159.84/>
 
 ---
 
@@ -64,6 +64,7 @@ GitHub Actions Workflow
 ```
 
 **Deployment Flow**:
+
 1. Code pushed to `main` branch triggers GitHub Actions
 2. CI job runs tests and linting
 3. Docker image built and pushed to AWS ECR with version tags
@@ -76,6 +77,7 @@ GitHub Actions Workflow
 ## ✨ Features
 
 ### Deployment & DevOps
+
 - **Automated CI/CD**: Push code → Auto-deploy to production in ~3 minutes
 - **Docker Containerization**: Consistent environments from dev to production
 - **AWS ECR Integration**: Private container registry with image versioning
@@ -84,6 +86,7 @@ GitHub Actions Workflow
 - **Security Best Practices**: IAM roles, Security Groups, encrypted secrets
 
 ### Application Features
+
 - **ML Prediction API**: Student math score prediction based on 7 features
 - **Web Interface**: Responsive Flask UI with form validation
 - **RESTful Architecture**: Clean API design for future integrations
@@ -174,6 +177,7 @@ Trigger: Push to main branch
 ### Local Development
 
 #### Prerequisites
+
 - Python 3.10+
 - Git
 - Docker (optional, for local container testing)
@@ -181,7 +185,7 @@ Trigger: Push to main branch
 #### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mlproject.git
+git clone https://github.com/aashishkumar-tech/mlproject.git
 cd mlproject
 ```
 
@@ -213,7 +217,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Visit: http://localhost:8080
+Visit: <http://localhost:8080>
 
 ---
 
@@ -226,6 +230,7 @@ This project includes **step-by-step AWS setup instructions**. Follow the guide 
 📖 **[AWS-SETUP-GUIDE.md](AWS-SETUP-GUIDE.md)** - Complete AWS deployment walkthrough
 
 **What you'll create**:
+
 1. ✅ IAM user with ECR permissions
 2. ✅ ECR repository for Docker images
 3. ✅ EC2 Security Group with proper rules
@@ -256,7 +261,7 @@ git commit -m "deploy: initial deployment"
 git push origin main
 
 # 3. GitHub Actions automatically deploys to EC2
-# Check workflow: https://github.com/YOUR_USERNAME/mlproject/actions
+# Check workflow: https://github.com/aashishkumar-tech/mlproject/actions
 ```
 
 ---
@@ -286,6 +291,7 @@ docker rm mlproject
 ### Docker Configuration
 
 **Dockerfile highlights**:
+
 - Base image: `python:3.10-slim`
 - Multi-stage optimization
 - 2 Gunicorn workers (optimized for 1GB RAM)
@@ -389,6 +395,7 @@ Comprehensive documentation for different audiences:
 ### Common Deployment Issues
 
 **Worker Timeout Errors**:
+
 ```bash
 # Check Docker logs on EC2
 ssh ec2-user@YOUR_EC2_IP
@@ -398,14 +405,17 @@ docker logs mlproject --tail 100
 **Solution**: Increase Gunicorn timeout in Dockerfile (already set to 120s)
 
 **Missing Model Files**:
+
 - Ensure `artifacts/` is NOT in `.dockerignore`
 - Check that model.pkl and preprocessor.pkl exist
 
 **SSH Authentication Failed**:
+
 - Verify EC2_SSH_KEY secret contains full .pem content
 - Include BEGIN and END lines
 
 **AWS Credentials Error**:
+
 - Rotate IAM access keys
 - Update GitHub Secrets
 
@@ -416,17 +426,20 @@ docker logs mlproject --tail 100
 ## 💰 Cost Breakdown
 
 ### AWS Free Tier (First 12 months)
+
 - EC2 t2.micro: 750 hours/month - **$0.00**
 - ECR Storage: 500MB/month - **$0.00**
 - Data Transfer: 1GB/month - **$0.00**
 
 ### After Free Tier
+
 - EC2 t2.micro 24/7: ~$8.50/month
 - ECR Storage (5GB): ~$0.50/month
 - Data Transfer (10GB): ~$0.90/month
 - **Total**: ~$10/month
 
 **Cost Optimization Tips**:
+
 - Stop EC2 when not in use (~$0.01/hour)
 - Use reserved instances for 30-70% savings
 - Clean up old Docker images regularly
@@ -436,6 +449,7 @@ docker logs mlproject --tail 100
 ## 🚀 Future Enhancements
 
 ### Phase 1: Infrastructure
+
 - [ ] Add Application Load Balancer
 - [ ] Implement Auto Scaling Groups
 - [ ] Set up CloudWatch monitoring and alarms
@@ -443,6 +457,7 @@ docker logs mlproject --tail 100
 - [ ] Configure custom domain with Route 53
 
 ### Phase 2: MLOps
+
 - [ ] Integrate MLflow for experiment tracking
 - [ ] Add model versioning and A/B testing
 - [ ] Implement model retraining pipeline
@@ -450,6 +465,7 @@ docker logs mlproject --tail 100
 - [ ] Add feature store (AWS SageMaker)
 
 ### Phase 3: Advanced Features
+
 - [ ] Kubernetes deployment (EKS)
 - [ ] Terraform IaC implementation
 - [ ] Multi-region deployment
@@ -461,6 +477,7 @@ docker logs mlproject --tail 100
 ## 🤝 Contributing
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for:
+
 - Code of conduct
 - Development setup
 - Coding standards
@@ -492,17 +509,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact & Support
 
-- **GitHub Issues**: [Open an issue](https://github.com/YOUR_USERNAME/mlproject/issues)
+- **GitHub Issues**: [Open an issue](https://github.com/aashishkumar-tech/mlproject/issues)
+- **Email**: aashishkumar.tech@gmail.com
 - **Documentation**: Check the docs/ folder
-- **Live Demo**: http://34.228.159.84/
+- **Live Demo**: <http://34.228.159.84/>
 
 ---
 
 ## 📈 Project Stats
 
-![GitHub last commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/mlproject)
-![GitHub repo size](https://img.shields.io/github/repo-size/YOUR_USERNAME/mlproject)
-![GitHub](https://img.shields.io/github/license/YOUR_USERNAME/mlproject)
+![GitHub last commit](https://img.shields.io/github/last-commit/aashishkumar-tech/mlproject)
+![GitHub repo size](https://img.shields.io/github/repo-size/aashishkumar-tech/mlproject)
+![GitHub](https://img.shields.io/github/license/aashishkumar-tech/mlproject)
 
 ---
 
@@ -515,6 +533,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Live Application**: [http://34.228.159.84/](http://34.228.159.84/)
 
 ### Usage
+
 1. Visit the live application
 2. Click "Get Started" to access prediction form
 3. Fill in student information
@@ -525,19 +544,23 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📖 How to Use This Project
 
 ### For Learning DevOps/MLOps
+
 1. Clone and explore the `.github/workflows/ec2-deploy.yml` file
 2. Review `Dockerfile` and `.dockerignore` for containerization best practices
 3. Follow [AWS-SETUP-GUIDE.md](AWS-SETUP-GUIDE.md) to deploy your own instance
 4. Modify and push code to see CI/CD in action
 
 ### For Portfolio/Resume
+
 - Showcase automated deployment skills
 - Demonstrate AWS cloud infrastructure knowledge
 - Highlight CI/CD pipeline design
 - Show Docker containerization expertise
 
 ### For Job Interviews
+
 Talk about:
+
 - How you designed the 3-stage CI/CD pipeline
 - Why you chose specific AWS services (EC2 vs Lambda, ECR vs Docker Hub)
 - How you optimized Docker images and Gunicorn configuration
@@ -585,7 +608,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Support
 
 For issues and questions:
-- Open an [Issue](https://github.com/YOUR_USERNAME/mlproject/issues)
+
+- Open an [Issue](https://github.com/aashishkumar-tech/mlproject/issues)
 - Check the [Documentation](#-documentation)
 
 ---
@@ -604,4 +628,3 @@ For issues and questions:
 ---
 
 **⭐ If you find this project useful, please star it on GitHub!**
-

@@ -988,6 +988,7 @@ CMD ["gunicorn", "-w", "2", "--timeout", "120", "-b", "0.0.0.0:8080", "app:app"]
 ```
 
 **Key Configuration**:
+
 - **Workers**: 2 (optimized for 1GB RAM)
 - **Timeout**: 120s (allows model loading time)
 - **Port**: 8080 (mapped to host port 80)
@@ -1099,6 +1100,7 @@ Docker logs: docker logs mlproject
 **Problem**: Model loading takes 10-15 seconds, causing worker timeouts
 
 **Solution**:
+
 1. Increased Gunicorn timeout to 120s
 2. Reduced workers from 4 to 2 (memory constraint)
 3. Lazy loading (load model only when needed)
@@ -1126,6 +1128,7 @@ class PredictPipeline:
 **Constraints**: t2.micro has 1GB RAM
 
 **Strategies**:
+
 - Reduced Gunicorn workers (2 instead of 4)
 - Disabled verbose logging in CatBoost
 - Used `--no-cache-dir` in pip install

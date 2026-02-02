@@ -55,13 +55,17 @@ Settings → Secrets and variables → Actions → New repository secret
 ## 6. Files to Update Before Push
 
 ### README.md
+
 Replace `YOUR_USERNAME` with your GitHub username in:
+
 - Line 8: Badge URL
 - Line 116: Clone URL
 - And other occurrences
 
 ### Badges (Optional but Recommended)
+
 Update these in README.md:
+
 - Deployment badge (will work after first push)
 - GitHub stats badges (replace YOUR_USERNAME)
 
@@ -148,11 +152,12 @@ git push origin main
 After pushing to GitHub:
 
 1. **Check GitHub Actions**:
-   - Go to: https://github.com/YOUR_USERNAME/mlproject/actions
+   - Go to: <https://github.com/aashishkumar-tech/mlproject/actions>
    - Verify all 3 jobs pass (CI → Build → Deploy)
    - Expected time: ~3 minutes
 
 2. **Verify Deployment**:
+
    ```bash
    # Check application is live
    curl http://YOUR_EC2_IP/
@@ -164,8 +169,8 @@ After pushing to GitHub:
    ```
 
 3. **Test Application**:
-   - Visit: http://YOUR_EC2_IP/
-   - Test prediction: http://YOUR_EC2_IP/predictdata
+   - Visit: <http://YOUR_EC2_IP/>
+   - Test prediction: <http://YOUR_EC2_IP/predictdata>
 
 4. **Update README.md**:
    - Replace placeholder IP with your actual EC2 IP
@@ -202,7 +207,7 @@ If deployment fails:
    - SSH auth → Check EC2_SSH_KEY secret format
    - AWS credentials → Verify IAM permissions
 
-## ✅ Ready to Push!
+## ✅ Ready to Push
 
 Once all items are checked:
 
@@ -215,6 +220,7 @@ Watch the magic happen in GitHub Actions! 🚀
 ---
 
 **Project Focus**: This is a **DevOps/MLOps portfolio project** showcasing:
+
 - Automated CI/CD pipelines
 - Cloud infrastructure deployment (AWS)
 - Container orchestration (Docker)

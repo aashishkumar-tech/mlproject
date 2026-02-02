@@ -4,8 +4,7 @@
 
 **Project Name**: End-to-End ML Deployment with CI/CD Pipeline  
 **Focus**: **DevOps & MLOps** - Automated deployment to AWS with Docker and GitHub Actions  
-**Deployment**: Live at http://34.228.159.84/ (update with your IP)
-
+**Deployment**: Live at <http://34.228.159.84/>
 ---
 
 ## 📊 What Makes This Project Stand Out
@@ -81,6 +80,7 @@ artifacts/                 - ✅ Model files (INCLUDED in Docker)
 ## 🔍 Key Configuration Details
 
 ### Dockerfile
+
 ```dockerfile
 - Base: python:3.10-slim
 - Workers: 2 (optimized for t2.micro 1GB RAM)
@@ -90,6 +90,7 @@ artifacts/                 - ✅ Model files (INCLUDED in Docker)
 ```
 
 ### GitHub Actions Workflow
+
 ```yaml
 - Triggers: Push to main, Pull Requests
 - 3 Jobs: CI → Build/Push ECR → Deploy EC2
@@ -98,6 +99,7 @@ artifacts/                 - ✅ Model files (INCLUDED in Docker)
 ```
 
 ### AWS Infrastructure
+
 ```
 - Region: us-east-1
 - EC2: t2.micro (Free Tier)
@@ -110,9 +112,10 @@ artifacts/                 - ✅ Model files (INCLUDED in Docker)
 
 ## 🎯 Project Goals Achieved
 
-### For Recruiters/Interviewers:
+### For Recruiters/Interviewers
 
 ✅ **DevOps Skills**:
+
 - CI/CD pipeline design and implementation
 - Docker containerization
 - AWS cloud infrastructure
@@ -120,12 +123,14 @@ artifacts/                 - ✅ Model files (INCLUDED in Docker)
 - Security best practices (IAM, Security Groups)
 
 ✅ **MLOps Skills**:
+
 - Model deployment to production
 - Automated model serving
 - Production monitoring and logging
 - Cost optimization
 
 ✅ **Software Engineering**:
+
 - Clean code architecture
 - Comprehensive documentation
 - Version control best practices
@@ -210,7 +215,7 @@ git push origin main
 
 ### Step 4: Watch Deployment
 
-1. Go to: https://github.com/YOUR_USERNAME/mlproject/actions
+1. Go to: <https://github.com/aashishkumar-tech/mlproject/actions>
 2. Watch the 3-stage pipeline:
    - ✅ CI (tests & linting) - ~33s
    - ✅ Build & Push to ECR - ~1m 43s
@@ -235,7 +240,7 @@ docker logs mlproject
 
 ### "Tell me about a project you've worked on"
 
-> "I built an end-to-end MLOps project that demonstrates production deployment skills. It's a machine learning application deployed on AWS with a fully automated CI/CD pipeline using GitHub Actions, Docker, and ECR. 
+> "I built an end-to-end MLOps project that demonstrates production deployment skills. It's a machine learning application deployed on AWS with a fully automated CI/CD pipeline using GitHub Actions, Docker, and ECR.
 >
 > The architecture includes a 3-stage pipeline: first, continuous integration runs tests and linting; then, if that passes, it builds a Docker image and pushes it to AWS ECR with version tagging; finally, it deploys to an EC2 instance via SSH with automated health checks and zero-downtime container replacement.
 >
@@ -243,7 +248,7 @@ docker logs mlproject
 >
 > What makes it special is the focus on automation - any code push to main automatically deploys to production in under 3 minutes, with built-in rollback if health checks fail."
 
-### Technical Details You Can Discuss:
+### Technical Details You Can Discuss
 
 1. **Why EC2 over Lambda?**
    - Model size and loading time
@@ -281,17 +286,20 @@ docker logs mlproject
 ## 🎯 Next Steps (After Push)
 
 ### Immediate
+
 1. Verify deployment works
 2. Test all endpoints
 3. Update README with actual EC2 IP
 
 ### Short-term
+
 1. Add more comprehensive tests
 2. Implement monitoring (CloudWatch)
 3. Set up SSL/HTTPS
 4. Add custom domain
 
 ### Long-term
+
 1. Add Application Load Balancer
 2. Implement Auto Scaling
 3. Multi-region deployment
@@ -302,6 +310,7 @@ docker logs mlproject
 ## 🏆 Project Highlights for Portfolio
 
 **Perfect for these roles**:
+
 - DevOps Engineer
 - MLOps Engineer  
 - Cloud Engineer
@@ -309,6 +318,7 @@ docker logs mlproject
 - Platform Engineer
 
 **Skills Demonstrated**:
+
 - CI/CD Pipeline Design ⭐⭐⭐⭐⭐
 - Docker & Containerization ⭐⭐⭐⭐⭐
 - AWS Cloud Services ⭐⭐⭐⭐⭐
@@ -319,7 +329,7 @@ docker logs mlproject
 
 ---
 
-## ✅ Ready to Push!
+## ✅ Ready to Push
 
 Your project is **production-ready** and **portfolio-ready**. The focus on deployment, automation, and DevOps best practices will make this stand out in your GitHub profile.
 

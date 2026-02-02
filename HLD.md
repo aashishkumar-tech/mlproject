@@ -269,23 +269,23 @@ The Student Performance Prediction System is a production-grade Machine Learning
 
 ### 6.1 Machine Learning Stack
 
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| Programming Language | Python 3.10 | Core development language |
-| ML Framework | scikit-learn | Model training and preprocessing |
-| Ensemble Models | XGBoost, CatBoost | Advanced boosting algorithms |
-| Data Processing | pandas, numpy | Data manipulation |
-| Model Serialization | dill | Saving/loading models |
+| Component            | Technology        | Purpose                          |
+| -------------------- | ----------------- | -------------------------------- |
+| Programming Language | Python 3.10       | Core development language        |
+| ML Framework         | scikit-learn      | Model training and preprocessing |
+| Ensemble Models      | XGBoost, CatBoost | Advanced boosting algorithms     |
+| Data Processing      | pandas, numpy     | Data manipulation                |
+| Model Serialization  | dill              | Saving/loading models            |
 
 ### 6.2 Web Stack
 
-| Component | Technology | Purpose |
-|-----------|-----------|---------|
-| Web Framework | Flask | HTTP server and routing |
-| WSGI Server | Gunicorn | Production-grade app server |
-| Templating | Jinja2 | HTML template rendering |
-| Forms | HTML5 | User input collection |
-| Styling | CSS3 | UI presentation |
+| Component   | Technology | Purpose                      |
+| ----------- | ---------- | ---------------------------- |
+| Web Framework | Flask      | HTTP server and routing      |
+| WSGI Server | Gunicorn   | Production-grade app server  |
+| Templating  | Jinja2     | HTML template rendering      |
+| Forms       | HTML5      | User input collection        |
+| Styling     | CSS3       | UI presentation              |
 
 ### 6.3 DevOps Stack
 
@@ -369,6 +369,7 @@ Scalable Architecture:
 ```
 
 **Recommendations**:
+
 - Use Auto Scaling Groups for EC2
 - Add Application Load Balancer
 - Implement model caching (Redis)
@@ -408,6 +409,7 @@ Scalable Architecture:
 ```
 
 **Key Metrics to Track**:
+
 - Request latency
 - Prediction success rate
 - Model inference time
@@ -439,6 +441,7 @@ docker run -d -p 80:8080 --name mlproject <ECR_REGISTRY>/mlproject:latest
 ```
 
 **EC2 Instance Failure**:
+
 1. Launch new EC2 instance
 2. Install Docker and AWS CLI
 3. Update GitHub Secrets with new EC2_HOST
@@ -494,24 +497,28 @@ docker run -d -p 80:8080 --name mlproject <ECR_REGISTRY>/mlproject:latest
 ## 13. Future Roadmap
 
 ### Phase 1: Immediate Improvements
+
 - [ ] Add HTTPS with SSL certificate
 - [ ] Implement health check endpoint
 - [ ] Add request logging and analytics
 - [ ] Set up CloudWatch monitoring
 
 ### Phase 2: Feature Enhancements
+
 - [ ] REST API with FastAPI
 - [ ] Model versioning and A/B testing
 - [ ] User authentication
 - [ ] Prediction history tracking
 
 ### Phase 3: Infrastructure Upgrades
+
 - [ ] Multi-AZ deployment
 - [ ] Load balancing
 - [ ] Database integration (RDS)
 - [ ] CDN for static assets (CloudFront)
 
 ### Phase 4: ML Pipeline Improvements
+
 - [ ] Automated model retraining
 - [ ] Feature store implementation
 - [ ] Model monitoring and drift detection
@@ -522,6 +529,7 @@ docker run -d -p 80:8080 --name mlproject <ECR_REGISTRY>/mlproject:latest
 ## 14. Conclusion
 
 This High-Level Design document outlines a production-ready ML system with:
+
 - ✅ Modular architecture for maintainability
 - ✅ Automated CI/CD for rapid deployments
 - ✅ Containerized deployment for consistency

@@ -23,6 +23,7 @@ We pledge to make participation in this project a harassment-free experience for
 ### Our Standards
 
 **Positive behavior includes**:
+
 - Using welcoming and inclusive language
 - Being respectful of differing viewpoints
 - Gracefully accepting constructive criticism
@@ -30,6 +31,7 @@ We pledge to make participation in this project a harassment-free experience for
 - Showing empathy towards other community members
 
 **Unacceptable behavior includes**:
+
 - Trolling, insulting/derogatory comments, and personal attacks
 - Public or private harassment
 - Publishing others' private information without permission
@@ -42,6 +44,7 @@ We pledge to make participation in this project a harassment-free experience for
 ### Reporting Bugs
 
 Before submitting a bug report:
+
 - Check existing issues to avoid duplicates
 - Verify the bug in the latest version
 - Collect relevant information (logs, screenshots, system info)
@@ -103,6 +106,7 @@ Add any other context or screenshots about the feature request.
 ### Contributing Code
 
 Areas where contributions are welcome:
+
 - Bug fixes
 - Feature implementations
 - Documentation improvements
@@ -132,14 +136,14 @@ Areas where contributions are welcome:
 2. **Clone your fork**
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/mlproject.git
+   git clone https://github.com/aashishkumar-tech/mlproject.git
    cd mlproject
    ```
 
 3. **Add upstream remote**
 
    ```bash
-   git remote add upstream https://github.com/ORIGINAL_OWNER/mlproject.git
+   git remote add upstream https://github.com/aashishkumar-tech/mlproject.git
    ```
 
 4. **Create virtual environment**
@@ -167,7 +171,7 @@ Areas where contributions are welcome:
    ```
 
 7. **Test locally**
-   - Visit: http://localhost:8080
+   - Visit: <http://localhost:8080>
    - Test prediction endpoint
 
 ### Docker Setup
@@ -310,6 +314,7 @@ print("Starting data ingestion")
 ```
 
 **Types**:
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation changes
@@ -466,6 +471,7 @@ git push origin --delete feature/your-feature-name
 ### Manual Testing Checklist
 
 **Core Functionality**:
+
 - [ ] Application starts without errors
 - [ ] Landing page loads correctly
 - [ ] Prediction form displays all fields
@@ -474,12 +480,14 @@ git push origin --delete feature/your-feature-name
 - [ ] Result is displayed correctly
 
 **Edge Cases**:
+
 - [ ] Invalid input handling
 - [ ] Empty form submission
 - [ ] Boundary values (0, 100 for scores)
 - [ ] Special characters in form fields
 
 **Performance**:
+
 - [ ] Page load time < 2 seconds
 - [ ] Prediction response time < 15 seconds
 - [ ] No memory leaks during repeated requests
@@ -546,13 +554,14 @@ mlproject/
 - **Questions**: Open a GitHub Discussion
 - **Bugs**: Open an Issue with bug template
 - **Features**: Open an Issue with feature template
-- **Security**: Email [YOUR_EMAIL] directly
+- **Security**: Email aashishkumar.tech@gmail.com directly
 
 ---
 
 ## Recognition
 
 Contributors will be recognized in:
+
 - README.md Contributors section
 - Release notes
 - GitHub Contributors page
