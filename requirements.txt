@@ -6,7 +6,7 @@ wheel
 gunicorn==21.2.0
 
 # Web framework
-Flasky==2.3.3
+Flask==2.3.3
 
 # Data & ML
 numpy==1.24.4
