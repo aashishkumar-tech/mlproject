@@ -185,6 +185,15 @@ Trigger: Push to main branch
 - **Secret Management**: AWS credentials stored as GitHub encrypted secrets
 - **Monitoring**: Build status visible via GitHub Actions badge
 
+### ⚡ CI/CD Pipeline Performance
+
+| Stage | Time | Description |
+|-------|------|-------------|
+| CI (tests + lint) | ~45s | Python setup and quality validation |
+| Docker Build + ECR Push | ~1m 43s | Build container image and push to ECR |
+| EC2 Deploy | ~9s | Pull latest image, replace container, and health check |
+| **Total: Push to Production** | **~2m 37s (~3 min)** | End-to-end automated deployment |
+
 ---
 
 ## 🚀 Quick Start
