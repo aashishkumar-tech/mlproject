@@ -1,4 +1,4 @@
-Flask==0.1.0
+Flask==2.3.3
 pandas==1.5.3
 # Core build tools
 setuptools>=65.0.0
