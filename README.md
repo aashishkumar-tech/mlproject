@@ -33,6 +33,7 @@ This project demonstrates **production-grade ML deployment** with continuous int
 - [Deployment Architecture](#-deployment-architecture)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
+- [Model Performance](#-model-performance)
 - [CI/CD Pipeline](#-cicd-pipeline)
 - [Quick Start](#-quick-start)
 - [AWS Deployment Guide](#-aws-deployment-guide)
@@ -119,6 +120,20 @@ GitHub Actions Workflow
 | **ML Framework** | scikit-learn | Model training and preprocessing |
 | **Data Processing** | pandas, numpy | Data manipulation |
 | **Model Storage** | dill, pickle | Model serialization |
+
+---
+
+## 📊 Model Performance
+
+Measured on the held-out test split from `artifacts/test.csv` with the same preprocessing pipeline used in training.
+
+| Model | R² Score | MAE | RMSE |
+|-------|----------|-----|------|
+| **Ridge** ✅ | **0.8806** | 4.2126 | 5.3910 |
+| Linear Regression | 0.8795 | 4.2434 | 5.4146 |
+| CatBoost | 0.8511 | 4.5752 | 6.0203 |
+| Random Forest | 0.8488 | 4.6858 | 6.0652 |
+| XGBoost | 0.8231 | 5.0907 | 6.5612 |
 
 ---
 
