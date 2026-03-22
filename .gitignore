@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Project-generated artifacts
+catboost_info/
+*.zip
+
 # Distribution / packaging
 .Python
 build/
